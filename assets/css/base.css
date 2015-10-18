@@ -547,8 +547,9 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
     border-bottom: 1px solid rgba(255,255,255,.6);
 }
 .navbar:not(.navbar-transparent).navbar-ct-blue{
-    background-color: #34ACDC;
-    background-color: rgba(52, 172, 220, 0.98);
+    /*background-color: #34ACDC;*/
+    /*background-color: rgba(52, 172, 220, 0.98);*/
+    background-color: rgba(0, 0, 0, 0.98);
 }
 .navbar:not(.navbar-transparent).navbar-ct-azzure{
     background-color: #5BCAFF;

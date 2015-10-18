@@ -342,6 +342,10 @@
   background-size: cover;
 }
 
+#trips .text-center {
+    color: white;
+}
+
 #about {
   background: url(../img/2_Curtis.jpg) no-repeat center center fixed; 
   display: table;
