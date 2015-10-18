@@ -7,6 +7,15 @@ $(window).scroll(function(e) {
 });
 
 $(document).ready(function() {
+
+  // Aggregating Google Calendar Events
+  $('#eventlist').gCalReader({
+    calendarId:'en.usa#holiday@group.v.calendar.google.com',
+    apiKey:'AIzaSyBNpHrFKKWxQxuMc9CffQ_3vjWttWIb3j0',
+    sortDescending: false
+  });
+
+  // Binding animated scroll to navigation links
   $('a').bind('click',function(event) {
     var $anchor = $(this);
 
@@ -18,7 +27,8 @@ $(document).ready(function() {
     $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top
     }, 1000);
-  */
+    */
+    
     event.preventDefault();
   });
 });
