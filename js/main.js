@@ -4,20 +4,40 @@ var fixedTop = false;
 $(window).scroll(function(e) {
   oVal = ($(window).scrollTop() / 170);
   $(".blur").css("opacity", oVal);
+});
 
-  $('.navbar-toggle').click(function(e) {
-    console.log('ya');
-  });
+searchVisible = 0;
+transparent = true;
 
+$(document).scroll(function() {
+  if( $(this).scrollTop() > 150 ) {
+      if(transparent) {
+          transparent = false;
+          $('nav[role="navigation"]').removeClass('navbar-transparent');
+      }
+  } else {
+      if( !transparent ) {
+          transparent = true;
+          $('nav[role="navigation"]').addClass('navbar-transparent');
+      }
+  }
 });
 
 $(document).ready(function() {
-
+  $('.fancybox').fancybox();
   // Aggregating Google Calendar Events
   $('#eventlist').gCalReader({
-    calendarId:'en.usa#holiday@group.v.calendar.google.com',
+    calendarId:'cualpine@gmail.com',
     apiKey:'AIzaSyBNpHrFKKWxQxuMc9CffQ_3vjWttWIb3j0',
     sortDescending: false
+  });
+
+  $('.navbar-toggle').click(function(e) {
+    if ($('nav[role="navigation"]').hasClass('navbar-transparent')) {
+      $('nav[role="navigation"]').removeClass('navbar-transparent');
+    } else {
+      // $('nav[role="navigation"]').addClass('navbar-transparent');
+    }
   });
 
   // Binding animated scroll to navigation links

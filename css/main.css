@@ -283,6 +283,11 @@
 /*        height: 100%; */
        width: 150%;
     }
+
+    a.fancybox img {
+    max-height: 300px;
+    margin: 0.5em;
+}
 }
 .social-share{
     margin-right: 0px;
@@ -333,7 +338,7 @@
 #trips {
   background: url(../img/3_Cat.jpg) no-repeat center center fixed; 
   display: table;
-  height: 800px;
+  /*height: 800px;*/
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -346,10 +351,10 @@
     color: white;
 }
 
-#about {
+#membership {
   background: url(../img/2_Curtis.jpg) no-repeat center center fixed; 
   display: table;
-  height: 800px;
+  /*height: 800px;*/
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -363,3 +368,32 @@
 #eventlist { list-style: none; padding: 0; margin: 0 auto; color: white; }
 #eventlist li { list-style: none; padding: 3px; border-bottom: 2px solid #eee;}
 .eventtitle { font-weight: bold; }
+
+a.fancybox img {
+    max-height: 100px;
+    margin: 0.5em;
+}
+
+.navbar-brand {
+    background: url(../img/logo.png) no-repeat center center;
+    background-size: 50px 50px;
+    background-position: 15%;
+    padding-left: 50px;
+}
+
+.carousel-inner img {
+    /*max-height: 768px;*/
+    width: 100%;
+}
+
+.leadership img {
+    max-height: 350px;
+}
+
+.container p, #eventlist {
+    font-size: 20px;
+}
+
+table {
+    font-size: 20px;
+}
