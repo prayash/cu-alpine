@@ -115,7 +115,6 @@
 }
 .footer{
     background-color: #DDDDDD;
-    background-image: url('img/cover_4_blur.jpg');
     background-attachment: fixed;
     position: relative;
 }
@@ -284,7 +283,7 @@
 
     a.fancybox img {
         max-height: 300px;
-        margin: 0.5em;
+        margin: 0.25em;
     }
 
     .navbar-brand {

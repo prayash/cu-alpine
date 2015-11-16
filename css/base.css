@@ -459,7 +459,7 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
 .navbar-transparent .navbar-nav > li > a, [class*="navbar-ct"] .navbar-nav > li > a{
     color: #FFFFFF;
     border-color: #FFFFFF;
-    opacity: 0.7;
+    opacity: 0.85;
 }
 .navbar-transparent .navbar-brand:hover, .navbar-transparent .navbar-brand:focus, [class*="navbar-ct"] .navbar-brand:hover, [class*="navbar-ct"] .navbar-brand:focus {
     background-color: rgba(0, 0, 0, 0);
