@@ -1,15 +1,15 @@
 // Handles navigation transparency during scrolling!
 transparent = true;
 $(document).scroll(function() {
-  if( $(this).scrollTop() > 150 ) {
-    if(transparent) {
+  if ($(this).scrollTop() > 150) {
+    if (transparent) {
       transparent = false;
-      $('nav[role="navigation"]').removeClass('navbar-transparent');
+      $('.navbar').removeClass('navbar-transparent');
     }
   } else {
-    if( !transparent ) {
+    if (!transparent) {
       transparent = true;
-      $('nav[role="navigation"]').addClass('navbar-transparent');
+      $('.navbar').addClass('navbar-transparent');
     }
   }
 });
@@ -39,17 +39,21 @@ $(document).ready(function() {
     $('html, body').stop().animate({
       scrollTop: $($anchor.attr('href')).offset().top - 60
     }, 800);
-    /*
-    if you don't want to use the easing effects:
-    $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top
-    }, 1000);
-    */
+
     event.preventDefault();
   });
 
-  // Collapses responsive navigation after clicking on a link.
-  $('.navbar-collapse a').click(function(){
+  // Detecting media queries.
+  var mq = window.matchMedia( "(max-width: 780px)" );
+  if (mq.matches) {
+    // Collapses responsive navigation after clicking on a link.
+    $('.navbar-collapse a').click(function() {
       $(".navbar-collapse").collapse('hide');
-  });
+    });
+  }
 });
+
+// Instantiate FastClick to remedy touch delays
+window.addEventListener('load', function() {
+    new FastClick(document.body);
+}, false);

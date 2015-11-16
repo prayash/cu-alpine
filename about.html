@@ -56,38 +56,33 @@
 <!-- End Navigation -->
 
 <div id="carousel">
-    <!--    
-            IMPORTANT - This carousel can have a special class for a smooth transition "gsdk-transition". Since javascript cannot be overwritten, if you want to use it, you can use the bootstrap.js or bootstrap.min.js from the GSDKit or you can open your bootstrap.js file, search for "emulateTransitionEnd(600)" and change it with "emulateTransitionEnd(1200)"     
-            
-    -->
-    <div id="carousel-example-generic" class="carousel slide gsdk-transition" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      </ol>
-    
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="item active">
-          <img src="img/_slides/slideFour.jpg" alt="">
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="item">
-          <img src="img/_slides/slideFive.jpg" alt="Lake Powell">
-        </div>
+  <!--    
+  IMPORTANT - This carousel can have a special class for a smooth transition "gsdk-transition". Since javascript cannot be overwritten, if you want to use it, you can use the bootstrap.js or bootstrap.min.js from the GSDKit or you can open your bootstrap.js file, search for "emulateTransitionEnd(600)" and change it with "emulateTransitionEnd(1200)"
+  -->
+  
+  <div id="carousel-example-generic" class="carousel slide gsdk-transition" data-ride="carousel">
+    <!-- Indicators -->
+    <!-- <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    </ol> -->
+  
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="item active">
+        <img src="img/_slides/slideFive.jpg" alt="">
       </div>
-      
-      <!-- Controls - hidden because there's only one slide. -->
-<!--       <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-        <span class="fa fa-angle-left"></span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-        <span class="fa fa-angle-right"></span>
-      </a> -->
     </div>
+    
+    <!-- Controls - hidden because there's only one slide. -->
+    <!-- <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+      <span class="fa fa-angle-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+      <span class="fa fa-angle-right"></span>
+    </a> -->
+  </div>
 </div> <!-- end carousel -->
 
 <!-- About Us -->
@@ -104,7 +99,7 @@
       <input type="checkbox" checked>
       <i></i>
       <h2>How do I join?</h2>
-      <p>Membership costs $20 for one year or $50 for five. Come by the club office at UMC 443 during our office hours to purchase one!</p>
+      <p>Membership costs $20 for one year or $50 for five. Come by the club office at UMC 443 during our <a href="#officeHours">office hours</a> to purchase one!</p>
     </li>
     <li>
       <input type="checkbox" checked>
@@ -171,7 +166,7 @@
           We are happy to accomadate you after-hours but please post on the Alpine Club facebook page or email us at cualpine@gmail.com to set it up.
           Note that we only accept cash and checks!</p>
 
-      <table>
+      <table style="width: 100%;">
         <tr>
           <th></th>
           <th>Monday</th>
@@ -258,38 +253,58 @@
   <div class="row">
 
     <!-- Movement -->
-    <div class="col-lg-2 col-md-2 col-md-offset-1 col-xs-6 thumb">
+    <div class="col-lg-4 col-md-4 col-xs-12 thumb">
       <a class="thumbnail">
-          <img class="img-responsive" src="img/_sponsors/movement.png" alt="Movement">
+        <img class="img-responsive" src="img/_sponsors/movement.png" alt="Movement">
       </a>
+      <ul>
+        <li>3 month pass for $185.</li>
+        <li>Offers Climbing, yoga, and fitness.</li> 
+      </ul>
     </div>
 
     <!-- The Spot -->
-    <div class="col-lg-2 col-md-2 col-xs-6 thumb">
+    <div class="col-lg-4 col-md-4 col-xs-12 thumb">
       <a class="thumbnail">
         <img class="img-responsive" src="img/_sponsors/spot.png" alt="The Spot">
       </a>
-    </div>
-
-    <!-- Kingflyer -->
-    <div class="col-lg-2 col-md-2 col-xs-6 thumb">
-      <a class="thumbnail">
-        <img class="img-responsive" src="img/_sponsors/kingflyer.png" alt="Kingflyer">
-      </a>
+      <ul>
+        <li>Members receive a 3 month pass for $160.</li> 
+        <li>Free classes & workshops based on training techniques and pushing your climbing to the next level.</li>
+      </ul>
     </div>
 
     <!-- BRC -->
-    <div class="col-lg-2 col-md-2 col-xs-6 thumb">
+    <div class="col-lg-4 col-md-4 col-xs-12 thumb">
       <a class="thumbnail">
-        <img class="img-responsive" src="img/_sponsors/brc.png" alt="">
+        <img class="img-responsive" src="img/_sponsors/brc.png" alt="BRC">
       </a>
+      <ul>
+        <li>3 month membership for $165.</li>
+        <li>Free classes that range from safe belay techniques to saavy anchor building skills.</li>
+        <li>Stay tuned to our Facebook page for these events!</li>
+      </ul>
+    </div>
+
+    <!-- Kingflyer -->
+    <div class="col-lg-4 col-md-4 col-xs-12 thumb">
+      <a class="thumbnail">
+        <img class="img-responsive" src="img/_sponsors/kingflyer.png" alt="Kingflyer">
+      </a>
+      <ul>
+        <li>20% off all apparel and accessories.</li>
+        <li>Use code "Alpine20" for the discount at checkout.</li>
+      </ul>
     </div>
 
     <!-- Backpacker's Pantry -->
-    <div class="col-lg-2 col-md-2 col-xs-6 thumb">
+    <div class="col-lg-4 col-md-4 col-xs-12 thumb">
       <a class="thumbnail">
-        <img class="img-responsive" src="img/_sponsors/backpackerspantry.png" alt="">
+        <img class="img-responsive" src="img/_sponsors/backpackerspantry.png" alt="Backpacker's Pantry">
       </a>
+      <ul>
+        <li>Helps provide food for our club trips, as well as offering limited time discounts to members via our facebook page.</li>
+      </ul>
     </div>
 
   </div>

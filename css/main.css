@@ -365,6 +365,7 @@
   background: url(../img/3_Cat.jpg) no-repeat center center fixed; 
   display: table;
   height: auto;
+  min-height: 500px;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -385,15 +386,10 @@
 /* -------------------------------- */
 /* Membership */
 #membership {
-  background: url(../img/_slides/slideOne.jpg) no-repeat center center fixed; 
   display: table;
   /*height: 800px;*/
   position: relative;
   width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 /* -------------------------------- */
@@ -432,7 +428,7 @@ navigation a:active {
 /* Office Hours */
 
 #officeHours {
-    background: url(../img/3_Cat.jpg) no-repeat center center fixed; 
+    background: url(../img/_slides/slideOne.jpg) no-repeat center center fixed; 
     display: table;
     height: auto;
     position: relative;
