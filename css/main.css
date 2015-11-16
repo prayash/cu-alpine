@@ -127,8 +127,6 @@
     position: relative;
 }
 .footer .credits {
-   border-top: 1px solid #BBBBBB;
-    margin-top: 85px;
     padding: 20px 0 15px;
     text-align: center;
     color: #EEE;
@@ -195,7 +193,7 @@
     font-size: 48px;
     font-weight: 300;
     position: relative;
-    width: 430px;
+    /*width: 430px;*/
     margin: 30px auto 50px;
 }
 .parallax-pro .label{
@@ -285,9 +283,23 @@
     }
 
     a.fancybox img {
-    max-height: 300px;
-    margin: 0.5em;
+        max-height: 300px;
+        margin: 0.5em;
+    }
+
+    .navbar-brand {
+        padding-left: 1em;
+    }
 }
+
+@media (max-width: 480px){
+    .navbar-brand {
+        padding-left: 0.75em;
+    }
+
+    .aboutUs h2 {
+        font-size: 1em;
+    }
 }
 .social-share{
     margin-right: 0px;
@@ -325,8 +337,6 @@
     line-height: 40px;
 }
 
-/* -------------------------------- */
-/* padded section */
 .pad-section {
   padding: 50px 0;
 }
@@ -335,10 +345,27 @@
   width: 100%;
 }
 
+
+/* -------------------------------- */
+/* Header */
+.navbar-header {
+    background: url(../img/_logo.png) no-repeat center center;
+    background-size: 50px 50px;
+    background-position: 2.5%;
+    /*padding-left: 50px;*/
+}
+
+.navbar-brand {
+    margin-left: 2.5em !important;
+}
+
+
+/* -------------------------------- */
+/* Trips */
 #trips {
   background: url(../img/3_Cat.jpg) no-repeat center center fixed; 
   display: table;
-  /*height: 800px;*/
+  height: auto;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -351,8 +378,15 @@
     color: white;
 }
 
+#eventlist { list-style: none; padding: 0; margin: 0 auto; color: white; }
+#eventlist li { list-style: none; padding: 3px; border-bottom: 2px solid #eee;}
+.eventtitle { font-weight: bold; }
+
+
+/* -------------------------------- */
+/* Membership */
 #membership {
-  background: url(../img/2_Curtis.jpg) no-repeat center center fixed; 
+  background: url(../img/_slides/slideOne.jpg) no-repeat center center fixed; 
   display: table;
   /*height: 800px;*/
   position: relative;
@@ -363,23 +397,16 @@
   background-size: cover;
 }
 
-/* Trips & Events Calendar */
-
-#eventlist { list-style: none; padding: 0; margin: 0 auto; color: white; }
-#eventlist li { list-style: none; padding: 3px; border-bottom: 2px solid #eee;}
-.eventtitle { font-weight: bold; }
+/* -------------------------------- */
+/* Gallery */
 
 a.fancybox img {
     max-height: 100px;
     margin: 0.5em;
 }
 
-.navbar-brand {
-    background: url(../img/logo.png) no-repeat center center;
-    background-size: 50px 50px;
-    background-position: 15%;
-    padding-left: 50px;
-}
+/* -------------------------------- */
+/* Carousel */
 
 .carousel-inner img {
     /*max-height: 768px;*/
@@ -387,7 +414,7 @@ a.fancybox img {
 }
 
 .leadership img {
-    max-height: 350px;
+    max-height: 300px;
 }
 
 .container p, #eventlist {
@@ -396,4 +423,150 @@ a.fancybox img {
 
 table {
     font-size: 20px;
+}
+
+navigation a:active {
+    color: black;
+}
+
+/* -------------------------------- */
+/* Office Hours */
+
+#officeHours {
+    background: url(../img/3_Cat.jpg) no-repeat center center fixed; 
+    display: table;
+    height: auto;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* -------------------------------- */
+/* Footer */
+
+.footer img {
+    min-width: 100%;
+    position: absolute;
+    background-size: cover;
+    min-height: 100%;
+}
+
+/* -------------------------------- */
+/* About Us According / FAQ */
+
+.transition, .aboutUs p, .aboutUs li i:before, .aboutUs li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+.flipIn, ul li {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.aboutUs h2 {
+    font-size: 1.75em;
+}
+
+.aboutUs p {
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+}
+
+.aboutUs {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+.aboutUs li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.aboutUs li:last-of-type {
+  padding-bottom: 0;
+}
+
+.aboutUs li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 15px;
+  right: 0;
+}
+
+.aboutUs li i:before, .aboutUs li i:after {
+  content: "";
+  position: absolute;
+  background-color: #ff6873;
+  width: 3px;
+  height: 9px;
+}
+.aboutUs li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.aboutUs li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.aboutUs li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.aboutUs li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+.aboutUs li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.aboutUs li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
 }

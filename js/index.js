@@ -8,7 +8,7 @@
         apiKey: 'Public_API_Key',
         dateFormat: 'LongDate',
         errorMsg: 'No events in calendar',
-        maxEvents: 50,
+        maxEvents: 10,
         futureEventsOnly: true,
         sortDescending: true
       },
@@ -26,9 +26,17 @@
       url: feedUrl,
       dataType: 'json',
       success: function(data) {
-        if(defaults.sortDescending){
+        if (defaults.sortDescending) {
           data.items = data.items.reverse();
         }
+
+        // There are no trips.
+        if (data.items == 0) {
+          var summary = "There are no trips planned currently. Stay tuned!"
+          var s ='<div class="eventtitle">'+ summary +'</div>';
+          $("#eventlist").append(s);
+        }
+
         data.items = data.items.slice(0, defaults.maxEvents);
 
         $.each(data.items, function(e, item) {
@@ -48,6 +56,7 @@
 					$($div).append('<li>' + s + '</li>');
         });
       },
+
       error: function(xhr, status) {
         $($div).append('<p>' + status +' : '+ defaults.errorMsg +'</p>');
       }

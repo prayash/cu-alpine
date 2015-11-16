@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Alpine Club | CU Boulder</title>
+
+  <!-- Imports -->
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/base.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" /> 
+  <link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Grand+Hotel'>
+
+  <!-- End Imports -->
+</head>
+
+<body>
+<!-- ** // Start Page Markup ** \\ -->
+
+<!-- Navigation -->
+<div id="navbar-full">
+  <div id="navbar">
+      <nav class="navbar navbar-ct-blue navbar-transparent navbar-fixed-top" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">navToggle</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Alpine Club at CU</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html#trips">Trips & Events</a></li>
+              <li><a href="index.html#membership">Membership</a></li>
+              <li><a href="index.html#gallery">Gallery</a></li>
+              <li><a href="about.html">About</a></li>
+              <!-- Facebook Link -->
+              <li><a href="http://facebook.com/groups/CUAlpine/" class="fa fa-facebook" target="_blank"></a></li>
+             </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+  </div>
+</div>
+<!-- End Navigation -->
+
+<div id="carousel">
+    <!--    
+            IMPORTANT - This carousel can have a special class for a smooth transition "gsdk-transition". Since javascript cannot be overwritten, if you want to use it, you can use the bootstrap.js or bootstrap.min.js from the GSDKit or you can open your bootstrap.js file, search for "emulateTransitionEnd(600)" and change it with "emulateTransitionEnd(1200)"     
+            
+    -->
+    <div id="carousel-example-generic" class="carousel slide gsdk-transition" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="item active">
+          <img src="img/_slides/slideFour.jpg" alt="">
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="item">
+          <img src="img/_slides/slideFive.jpg" alt="Lake Powell">
+        </div>
+      </div>
+      
+      <!-- Controls - hidden because there's only one slide. -->
+<!--       <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="fa fa-angle-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="fa fa-angle-right"></span>
+      </a> -->
+    </div>
+</div> <!-- end carousel -->
+
+<!-- About Us -->
+<div class="container tim-container" id="aboutUs">
+  <h1 class="text-center">About Us</h1>
+  <ul class="aboutUs">
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>What is the Alpine Club at CU?</h2>
+      <p>We're a student club dedicated to providing students and members of the front range climbing community with opportunities to enjoy climbing. We connect our members with  one another and the community.</p>
+    </li>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>How do I join?</h2>
+      <p>Membership costs $20 for one year or $50 for five. Come by the club office at UMC 443 during our office hours to purchase one!</p>
+    </li>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>Do I have to be a student to join?</h2>
+      <p>No,  The alpine club is open to the entire Boulder climbing community.</p>
+    </li>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>What are the benefits of membership?</h2>
+      <p>All members receive discounts with our sponsors. Members are also added the the Alpine Club Email List so that they are always up to date with trips and club news. Our extensive collection of guide books are available as well to borrow, come by the office to see what we have.</p>
+    </li>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>When do you meet?</h2>
+      <p>At the beginning of each semester, we hold a big club meeting for members and anyone interested about the club. There's always a slide show, gear raffle, presentations by our sponsors, and an after party sponsored by Avery Brewing Co.</p>
+    </li>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>What gear do I need?</h2>
+      <p>For the typical climbing trip you need a harness, shoes, chalk bag and belay device.  If you are new to the sport the Alpine Club can lend you any of this gear.  All the other necessarily equipment is discussed at the pre-trip meeting.</p>
+    </li>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>Do you rent gear?</h2>
+      <p>YES! We rent: climbing shoes, harnesses, helmets, belay devices, chalk bags, crampons, ice axes and guide books.  To check out gear you must show a valid membership card and Government ID.</p>
+    </li>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>Do you teach people how to climb?</h2>
+      <p>If you are looking for professional instruction, we recommend any of the climbing gyms or AMGA guides in the Boulder area. We do try to provide several free or highly subsidized belay classes with one of the climbing gyms each semester for those that are completely new to the sport. While there are plenty of opportunities to meet new climbers and deepen your knowledge of climbing through the club, we are not a professional guiding service.</p>
+    </li>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>Do you have any ice climbing trips?</h2>
+      <p>Yes we do. Every February, the club heads down to Ouray, Colorado for a weekend of ice climbing. Ouray is a beautiful town and by far the best place to learn how to ice climb. Usually, half the members that attend each year have never ice climbed before. For experienced ice climbers, Ouray and the surrounding area has numerous first class ice routes.</p>
+    </li>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2>How do I become more involved with the Alpine Club at CU?</h2>
+      <p>If you love our trips and want to be more involved with the club, talk to a current Board Member. We're always looking for another Board Member or two. If this is something that interests you, spend plenty of time climbing with current members and getting to know us. Once you've gotten to know the club, let us know that you want to be more involved. All Board Members must lead one trip per semester as well as complete office hours, at least one hour in the club office each week.</p>
+    </li>
+  </ul>
+  <p>
+</div>
+<br>
+
+
+<!-- Office Hours -->
+<div id="officeHours" class="pad-section">
+    <div class="container tim-container" style="background-color: rgba(0, 0, 0, 0.5); color: white;">
+        <h1 class="text-center">Office Hours</small></h1>
+          <p>Alpine Club office hours are in full swing! Come by room 443 in the UMC to access to equipment, books, or purchase a membership!
+          Posted below are the hours we are in the office.
+
+          Be aware that we are students as well as board members so we may be running to or from a class at the top of the hour.
+          We are happy to accomadate you after-hours but please post on the Alpine Club facebook page or email us at cualpine@gmail.com to set it up.
+          Note that we only accept cash and checks!</p>
+
+      <table style="width:100%">
+        <tr>
+          <th></th>
+          <th>Monday</th>
+          <th>Tuesday</th>   
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+        <tr>
+          <th>8:00 AM</th>
+          <td></td>    
+          <td></td>
+        </tr>
+        <tr>
+          <th>9:00 AM</th>
+          <td></td>    
+          <td>Dave</td>
+        </tr>
+        <tr>
+          <th>10:00 AM</th>
+          <td></td>    
+          <td>Paulina</td>
+        </tr>
+        <tr>
+          <th>11:00 AM</th>
+          <td>Ginny</td>    
+          <td>Sarah</td>
+          <td>Zach</td>
+          <td>Vale</td>
+          <td>Bobby</td>
+        </tr>
+        <tr>
+          <th>12:00 PM</th>
+          <td>Drew</td>    
+          <td>Gracyn</td>
+          <td>Curtis</td>
+          <td>Angela</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>1:00 PM</th>
+          <td>Jake</td>    
+          <td>Kristina</td>
+          <td>Max</td>
+          <td>Tatiana</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>2:00 PM</th>
+          <td></td>    
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>3:00 PM</th>
+          <td>Ben</td>    
+          <td></td>
+          <td>Fritz</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>4:00 PM</th>
+          <td></td>    
+          <td></td>
+        </tr>
+        <tr>
+          <th>5:00 PM</th>
+          <td></td>    
+          <td></td>
+        </tr>
+      </table>
+    </div>
+</div>
+<br>
+
+<!-- Sponsors -->
+<div class="container tim-container" id="sponsors">
+  <h1 class="text-center">Sponsors</h1>
+  <p>By purchasing a membership with the CU Alpine Club, members receive access to great deals from local and national retailers!</p>
+  <br>
+  <div class="row">
+
+    <!-- Movement -->
+    <div class="col-lg-2 col-md-2 col-md-offset-1 col-xs-6 thumb">
+      <a class="thumbnail">
+          <img class="img-responsive" src="img/_sponsors/movement.png" alt="Movement">
+      </a>
+    </div>
+
+    <!-- The Spot -->
+    <div class="col-lg-2 col-md-2 col-xs-6 thumb">
+      <a class="thumbnail">
+        <img class="img-responsive" src="img/_sponsors/spot.png" alt="The Spot">
+      </a>
+    </div>
+
+    <!-- Kingflyer -->
+    <div class="col-lg-2 col-md-2 col-xs-6 thumb">
+      <a class="thumbnail">
+        <img class="img-responsive" src="img/_sponsors/kingflyer.png" alt="Kingflyer">
+      </a>
+    </div>
+
+    <!-- BRC -->
+    <div class="col-lg-2 col-md-2 col-xs-6 thumb">
+      <a class="thumbnail">
+        <img class="img-responsive" src="img/_sponsors/brc.png" alt="">
+      </a>
+    </div>
+
+    <!-- Backpacker's Pantry -->
+    <div class="col-lg-2 col-md-2 col-xs-6 thumb">
+      <a class="thumbnail">
+        <img class="img-responsive" src="img/_sponsors/backpackerspantry.png" alt="">
+      </a>
+    </div>
+
+  </div>
+</div>
+<br>
+<!-- End Sponsors -->
+
+<!-- Leadership -->
+<div class="container tim-container" id="sponsors">
+<h1 class="text-center">Leadership</h1>
+<br>
+<div class="row leadership">
+
+    <!-- Jake Dickerson -->
+    <div class="col-lg-6 col-md-6 col-xs-12 thumb">
+      <img class="img-responsive" src="img/_leadership/jake.jpg" alt="Jake Dickerson">
+      <h3>Jake Dickerson</h3>
+      <h4>Year: Senior<br>
+      Major: EBIO<br>
+      Favorite type of climbing: Trad and Sport and Ice (pretty much all climbing)<br>
+      Favorite Alpine Club trip: Indian Creek and Red Rocks<br>
+      Quote: Did somebody say wonder?</h4>
+    </div>
+
+    <!-- Ben Crawford -->
+    <div class="col-lg-6 col-md-6 col-xs-12 thumb">
+      <img class="img-responsive" src="img/_leadership/ben.jpg" alt="Ben Crawford">
+      <h3>Ben Crawford</h3>
+      <h4>Year: Senior<br>
+      Major: EBIO<br>
+      Favorite type of climbing: Trad and Sport and Ice (pretty much all climbing)<br>
+      Favorite Alpine Club trip: Indian Creek and Red Rocks<br>
+      Quote: Did somebody say wonder?</h4>
+    </div>
+    <br>
+
+    <!-- Drew Herder -->
+    <div class="col-lg-6 col-md-6 col-xs-12 thumb">
+      <img class="img-responsive" src="img/_leadership/drew.jpg" alt="Drew Herder">
+      <h3>Drew Herder</h3>
+      <h4>Year: Senior<br>
+      Major: EBIO<br>
+      Favorite type of climbing: Trad and Sport and Ice (pretty much all climbing)<br>
+      Favorite Alpine Club trip: Indian Creek and Red Rocks<br>
+      Quote: Did somebody say wonder?</h4>
+    </div>
+
+    <!-- Fritz Carpenter -->
+    <div class="col-lg-6 col-md-6 col-xs-12 thumb">
+      <img class="img-responsive" src="img/_leadership/fritz.jpg" alt="Ben Crawford">
+      <h3>Fritz Carpenter</h3>
+      <h4>Year: Senior<br>
+      Major: EBIO<br>
+      Favorite type of climbing: Trad and Sport and Ice (pretty much all climbing)<br>
+      Favorite Alpine Club trip: Indian Creek and Red Rocks<br>
+      Quote: Did somebody say wonder?</h4>
+    </div>
+
+
+    <div class="col-lg-6 col-md-6 col-xs-12 thumb">
+
+    </div>
+
+
+    <div class="col-lg-6 col-md-6 col-xs-12 thumb">
+
+    </div>
+
+
+    <div class="col-lg-6 col-md-6 col-xs-12 thumb">
+
+    </div>
+
+  </div>
+</div>
+<!-- End Leadership -->
+
+<!-- Footer -->
+<div class="parallax-pro">
+  <img src="img/_footer.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <h1 class="hello text-center">
+           <a href="#">Alpine Club at CU</a>
+           <small>
+            <ul class="list-unstyled">
+              <li>University Memorial Center #443</li>
+              <li>CU Boulder</li>
+              <!-- Social Media -->
+              <li><a href="http://facebook.com/groups/CUAlpine/" class="fa fa-facebook" target="_blank"></a>&nbsp;&nbsp;<a href="http://instagram.com/cualpineclub/" class="fa fa-instagram" target="_blank"></a></li>
+            </ul>
+            </small>
+        </h1>
+      </div>
+    </div>
+    <div class="space-30"></div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="credits">
+          &copy; 2015 Alpine Club at CU
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Footer -->
+
+<!-- ** // End Page Markup ** \\ -->
+</body>
+
+<!-- Importing scripts ** DO NOT CHANGE THE ORDER OF THESE SCRIPTS ** ! -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="fancybox/source/jquery.fancybox.js?v=2.1.5" type="text/javascript" ></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<!-- End Page -->
+
+</html>

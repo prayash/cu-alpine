@@ -35,8 +35,6 @@ $(document).ready(function() {
   $('.navbar-toggle').click(function(e) {
     if ($('nav[role="navigation"]').hasClass('navbar-transparent')) {
       $('nav[role="navigation"]').removeClass('navbar-transparent');
-    } else {
-      // $('nav[role="navigation"]').addClass('navbar-transparent');
     }
   });
 
@@ -47,6 +45,7 @@ $(document).ready(function() {
     $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top - 60
     }, 800);
+    
     /*
     if you don't want to use the easing effects:
     $('html, body').stop().animate({
@@ -55,5 +54,9 @@ $(document).ready(function() {
     */
     
     event.preventDefault();
+  });
+
+  $('.navbar-collapse a').click(function(){
+      $(".navbar-collapse").collapse('hide');
   });
 });
