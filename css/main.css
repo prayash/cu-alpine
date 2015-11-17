@@ -358,6 +358,11 @@
     margin-left: 2.5em !important;
 }
 
+.nav-active {
+  color: #ffffff;
+  opacity: 1 !important;
+}
+
 
 /* -------------------------------- */
 /* Trips */
@@ -428,7 +433,7 @@ navigation a:active {
 /* Office Hours */
 
 #officeHours {
-    background: url(../img/_slides/slideOne.jpg) no-repeat center center fixed; 
+    background: url(../img/_slides/slideOne.jpg) no-repeat center center fixed;
     display: table;
     height: auto;
     position: relative;
@@ -565,3 +570,4 @@ navigation a:active {
     transform: rotateX(0deg);
   }
 }
+

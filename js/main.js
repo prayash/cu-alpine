@@ -35,22 +35,22 @@ $(document).ready(function() {
 
   // Binding animated scroll to navigation links
   $('a').bind('click',function(event) {
+    
     var $anchor = $(this);
     $('html, body').stop().animate({
       scrollTop: $($anchor.attr('href')).offset().top - 60
     }, 800);
-
     event.preventDefault();
   });
 
-  // Detecting media queries.
-  var mq = window.matchMedia( "(max-width: 780px)" );
-  if (mq.matches) {
-    // Collapses responsive navigation after clicking on a link.
-    $('.navbar-collapse a').click(function() {
+  // Collapses responsive navigation after clicking on a link.
+  $('.navbar-collapse a').click(function() {
+    // Detecting media queries.
+    var mq = window.matchMedia( "(max-width: 780px)" );
+    if (mq.matches) {
       $(".navbar-collapse").collapse('hide');
-    });
-  }
+    }
+  });
 });
 
 // Instantiate FastClick to remedy touch delays
