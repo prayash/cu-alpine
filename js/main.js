@@ -15,10 +15,6 @@ $(document).scroll(function() {
 });
 
 $(document).ready(function() {
-  // Initiate fancybox (used for gallery).
-  // if (window.location.href == about.html) 
-  $('.fancybox').fancybox();
-
   // Aggregating Google Calendar Events
   $('#eventlist').gCalReader({
     calendarId:'cualpine@gmail.com',

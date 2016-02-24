@@ -282,12 +282,16 @@
     }
 
     a.fancybox img {
-        max-height: 300px;
-        margin: 0.25em;
+        max-height: 200px;
+        margin: 5px 2px !important;
     }
 
     .navbar-brand {
         padding-left: 1em;
+    }
+    
+    .carousel-indicators {
+	    visibility: hidden;
     }
 }
 
@@ -297,13 +301,24 @@
     }
 
     .aboutUs h2 {
-        font-size: 1em;
+        font-size: 2rem;
+    }
+    
+    a.fancybox img {
+        max-height: 200px;
+        margin: 5px 2px !important;
+    }
+
+    .carousel-indicators {
+	    visibility: hidden;
     }
 }
-.social-share{
+
+.social-share {
     margin-right: 0px;
     margin-top: 10px;
 }
+
 .footer h4{
     margin: 0px 0 20px;
 }
@@ -434,7 +449,7 @@ navigation a:active {
 
 #officeHours {
     background: url(../img/_slides/slideOne.jpg) no-repeat center center fixed;
-    display: table;
+/*     display: table; */
     height: auto;
     position: relative;
     width: 100%;
