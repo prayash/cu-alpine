@@ -1177,7 +1177,27 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
 */
     }
 }
-.main{
+.main {
     background-color: #FFFFFF;
     position: relative;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.video-container {
+	text-align: center;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
