@@ -12,7 +12,7 @@
   <!-- Imports -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/base.css" rel="stylesheet" />
-  <link href="css/main.css" rel="stylesheet" /> 
+  <link href="css/main.css" rel="stylesheet" />
   <link href="css/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" media="screen" />
   <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Grand+Hotel'>
   <!-- End Imports -->
@@ -36,7 +36,7 @@
             </button>
             <a class="navbar-brand" href="index.html">Alpine Club at CU</a>
           </div>
-      
+
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -59,7 +59,7 @@
 <!-- End Navigation -->
 
 <div id="carousel">
-  <!--    
+  <!--
   IMPORTANT - This carousel can have a special class for a smooth transition "gsdk-transition". Since javascript cannot be overwritten, if you want to use it, you can use the bootstrap.js or bootstrap.min.js from the GSDKit or you can open your bootstrap.js file, search for "emulateTransitionEnd(600)" and change it with "emulateTransitionEnd(1200)"
   -->
 
@@ -70,7 +70,7 @@
       <li data-target="#carousel-example-generic" data-slide-to="1"></li>
       <li data-target="#carousel-example-generic" data-slide-to="2"></li>
     </ol>
-  
+
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <!-- Slide 1 -->
@@ -88,7 +88,7 @@
         <img src="img/_slides/slideThree.jpg" alt="Lake Powell">
       </div>
     </div>
-  
+
     <!-- Controls -->
     <!-- <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
       <span class="fa fa-angle-left"></span>
@@ -101,7 +101,7 @@
 
 <!-- Come Climb With Us! -->
 <div class="main" id="home">
-    <div class="container tim-container">
+    <div class="container alp-container">
       <h1 class="text-center" style="font-size: 4rem !important;">Come Climb With Us!</small></h1>
       <p>The Alpine Club at CU’s mission is to bring together Boulder climbers of all experience and abilities-from Gym Rats to Big Wallers-to form a supportive community of outdoor athletes.</p>
       <p>Through the organization of group trips, clinics, speakers and community outreach events, the Alpine Club strives to encourage individuals to take their climbing to the next level. The focus of our trips is to provide club members with an inexpensive way to explore climbing areas outside of Boulder. Nearly every weekend throughout the semester we organize trips to world-class climbing destinations, such as Indian Creek, the Devil’s Tower, the Black Canyon and Ouray. We also frequent many of the great climbing areas close to Boulder, providing opportunities for those who are new to the sport to increase their climbing experience, make friends and meet partners.</p>
@@ -114,8 +114,9 @@
 <br>
 
 <!-- Trips & Events -->
-<div id="trips" class="container tim-container pad-section">
-  <div class="container tim-container" style="background-color: rgba(0, 0, 0, 0.3);">
+<!-- <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="./img/helix-nebula-1400x1400.jpg" data-natural-width="1400" data-natural-height="1400" style="height: 299px;"></div> -->
+<div id="trips" class="container pad-section" data-parallax="scroll" data-bleed="0" data-speed="0.1" data-image-src="./img/cat_parallax.jpg" data-natural-width="1000" data-natural-height="667">
+  <div class="container alp-container" style="background-color: rgba(0, 0, 0, 0.3);">
     <h1 class="text-center" style="font-size: 4rem !important;">Trips & Events</h1>
     <ul id="eventlist"></ul>
   </div>
@@ -123,7 +124,7 @@
 
 <!-- Parallax -->
 <div id="membership">
-  <div class="container tim-container" style="background-color: rgba(255, 255, 255, .8);">
+  <div class="container alp-container" style="background-color: rgba(255, 255, 255, .8);">
 
     <h1 class="text-center" style="font-size: 4rem !important;">Membership</h1>
     <p>In order to better fulfill our mission, the Alpine Club at CU is transitioning towards funneling all new and old membership traffic through our office on the CU campus. That means we will no longer offer online membership purchases. To purchase a membership you will have to visit us in our office, room 443, in the University Memorial Center. Our office hours can be found <a href="about.html#officeHours" target="_blank">here</a>.The prices have stayed the same: $20 for one year and $50 for five, cash or check preferred. If you want more information check out our <a href="about.html#aboutUs" target="_blank">FAQ</a>. Also feel free to ask questions through <a href="http://facebook.com/groups/CUAlpine/" target="_blank">Facebook</a> or just stop by the office.</p>
@@ -132,7 +133,7 @@
 </div>
 
 <!-- Gallery -->
-<div class="container tim-container" id="gallery">
+<div class="container alp-container" id="gallery">
   <h1 class="text-center" style="font-size: 4rem !important;">Gallery</h1>
   <br>
   <p>
@@ -198,27 +199,11 @@
 <!-- Importing scripts ** DO NOT CHANGE THE ORDER OF THESE SCRIPTS ** ! -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="js/jquery.fancybox.js?v=2.1.5" type="text/javascript" ></script>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/fastclick.js" type='application/javascript'></script>
-<script src="js/index.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/parallax.min.js" type="text/javascript"></script>
 <script src="js/main.js" type="text/javascript"></script>
 
-<script>
-	// Initiate fancybox (used for gallery).
-	$('.fancybox').fancybox({
-		fitToView: true, // won't shrink to fit in the viewport
-        maxWidth: "90%",
-        padding: 0,
-		helpers : {
-			title: null,
-	        overlay : {
-	            css : {
-	                'background' : 'rgba(0, 0, 0, 0.75)'
-	            }
-	        }
-	    }
-	});
-</script>
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <!-- End Page -->
